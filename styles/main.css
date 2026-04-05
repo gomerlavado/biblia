@@ -1,0 +1,189 @@
+/* 
+palettee RColorBrewer::Pastel1
+#FBB4AE
+#B3CDE3
+#CCEBC5
+#DECBE4
+#FED9A6
+#FFFFCC
+#E5D8BD
+#FDDAEC
+
+Clasificación de los libros de la Biblia del AT
+Ley lib1
+Históricos - Prexilio lib2
+Históricos - Postexilio lib3
+Poéticos lib4
+Profetas mayores - Prexilio lib5
+Profetas mayores - Exilio lib6
+Profetas menores - Prexilio lib7
+Profetas menores - Postexilio lib8
+*/
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("fonts/OpenSans-Light.ttf");
+}
+
+* {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "OpenSans-Regular", sans-serif;
+}
+
+body {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #1192e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: "OpenSans-Medium", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    line-height: 1.25;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 0px;
+}
+
+h3 {
+    font-size: 25px;
+    padding: 0px;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+section {
+   margin-top: 0;
+   margin-bottom: 20px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    background: lightgreen;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr auto;
+    gap: 5px 10px;
+}
+
+.wrapper p {
+    margin: 0;
+    padding: 0;
+}
+
+.lib1 {
+    background-color: #FBB4AE;
+}
+
+.lib2 {
+    background-color: #B3CDE3;
+}
+
+.lib3 {
+    background-color: #CCEBC5;
+}
+
+.lib4 {
+    background-color: #DECBE4;
+}
+
+.lib5 {
+    background-color: #FED9A6;
+}
+
+.lib6 {
+    background-color: #FFFFCC;
+}
+
+.lib7 {
+    background-color: #E5D8BD;
+}
+
+.lib8 {
+    background-color: #FDDAEC;
+}
+
+.legend {
+  display: flex;
+  gap: 5px 30px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-color {
+  width: 18px;
+  height: 10px;
+  border-radius: 2px;  /* ligeramente redondeado tipo ggplot */
+}
+
+/* --- Responsive --- */
+@media screen and (min-width: 750px) {
+    h1, h2 {
+        text-align: center;
+    }
+}
+  
+@media screen and (max-width: 750px) {
+
+}
+  
